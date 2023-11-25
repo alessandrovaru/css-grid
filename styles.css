@@ -1,0 +1,9 @@
+.container{
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff
+}
+
+.item{
+    border: 2px solid #e1bee7;
+    font-size: 4rem;
+}
