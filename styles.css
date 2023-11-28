@@ -2,13 +2,25 @@
     border: 5px solid #e1bee7;
     background-color: #fff1ff;
     display: grid;
-    grid-template-rows: 200px 200px 200px;
-    grid-auto-columns: 200px 200px;
-    grid-auto-flow: column;
-    grid-gap: 20px
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 75px 75px 75px;
+    place-content: center;
 }
 
-.item{
+.item-1{
     border: 2px solid #e1bee7;
     font-size: 4rem;
+    grid-column: 1/4;
+}
+
+.item-2{
+    border: 2px solid #e1bee7;
+    font-size: 4rem;
+    grid-row: 2/4;
+}
+
+.item-3{
+    border: 2px solid #e1bee7;
+    font-size: 4rem;
+    grid-area: 2 / 2 / 4 / 4;
 }
