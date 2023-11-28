@@ -4,23 +4,27 @@
     display: grid;
     grid-template-columns: 200px 200px 200px;
     grid-template-rows: 75px 75px 75px;
+    grid-template-areas:
+        "header header header"
+        "side main main"
+        "side main main";
     place-content: center;
 }
 
 .item-1{
     border: 2px solid #e1bee7;
     font-size: 4rem;
-    grid-column: 1/4;
+    grid-area: header;
 }
 
 .item-2{
     border: 2px solid #e1bee7;
     font-size: 4rem;
-    grid-row: 2/4;
+    grid-area: side;
 }
 
 .item-3{
     border: 2px solid #e1bee7;
     font-size: 4rem;
-    grid-area: 2 / 2 / 4 / 4;
+    grid-area: main;
 }
