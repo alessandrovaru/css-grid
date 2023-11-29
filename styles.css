@@ -2,29 +2,11 @@
     border: 5px solid #e1bee7;
     background-color: #fff1ff;
     display: grid;
-    grid-template-columns: 200px 200px 200px;
-    grid-template-rows: 75px 75px 75px;
-    grid-template-areas:
-        "header header header"
-        "side main main"
-        "side main main";
-    place-content: center;
+    grid-template-columns: minmax(30px, 300px) 200px minmax(60px, 260px);
+    grid-template-rows: repeat(3, auto);
 }
 
-.item-1{
+.item{
     border: 2px solid #e1bee7;
-    font-size: 4rem;
-    grid-area: header;
-}
-
-.item-2{
-    border: 2px solid #e1bee7;
-    font-size: 4rem;
-    grid-area: side;
-}
-
-.item-3{
-    border: 2px solid #e1bee7;
-    font-size: 4rem;
-    grid-area: main;
+    font-size: 2rem;
 }
